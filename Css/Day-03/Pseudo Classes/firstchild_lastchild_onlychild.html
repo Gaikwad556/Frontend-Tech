@@ -1,0 +1,132 @@
+<style>
+    .container p:first-child{
+        color: blue;
+    }
+    .ol li:first-child {
+        color: blue;
+    }
+    .ul>li:first-child {
+        color: blue
+    }
+
+    /* style for second child */
+    .container_1 p:last-child {
+        color: red;
+    }
+
+    .ol_1 li:last-child {
+        color: red;
+    }
+
+    .ul_1>li:last-child {
+        color:red;
+    }
+
+    /* for only-child */
+    .container_2 p:only-child {
+        color: aqua;
+    }
+
+    .ol_2 li:only-child  {
+        color: aqua;
+    }
+
+    .ul_2>li:only-child  {
+        color:aqua;
+    }
+</style>
+<body>
+    <!-- first-child example -->
+    <h3>Example for first child</h3>
+    <div class="container">
+        <p>first child</p>
+        
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>last child</p>
+    </div>
+
+    <ol class="ol">
+        <li>first-child</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>last child</li>
+    </ol>
+
+    <ul class="ul">
+        <li>first-child</li>
+        <ol>
+            <li>
+                first-child
+            </li>
+            <li>last-child</li>
+        </ol>
+        <li>Lorem, ipsum.</li>
+        <li>last-child</li>
+    </ul>
+
+
+    <!--last-child example -->
+
+    <h3>Example for second child</h3>
+
+    <div class="container_1">
+        <p>first child</p>
+        <p>Lorem ipsum dolor sit amet.</p>
+        <p>last child </p>
+    </div>
+
+    <ol class="ol_1">
+        <li>first child.</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>last child.</li>
+    </ol>
+
+    <ul class="ul_1">
+        <li>first child</li>
+        <ol>
+            <li>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore.
+            </li>
+            <li>Lorem, ipsum.</li>
+        </ol>
+        <li>Lorem, ipsum.</li>
+        <li>last child</li>
+    </ul>
+
+    <!--only-child example-->
+    <h3>Example for only-child</h3>
+    <div class="container_2">
+        <p>only child</p>
+    </div>
+    <div class="container_2">
+        <p>first child</p>
+        <p>last child </p>
+    </div>  
+
+    <ol class="ol_2">
+        <li>first child</li>
+        <li>Lorem ipsum dolor sit amet consectetur.</li>
+        <li>last child</li>
+    </ol>
+
+    <ol class="ol_2">
+        <li>only child</li>
+        
+    </ol>
+
+    <ul class="ul_2">
+        <li>first child </li>
+        <ol>
+            <li>
+                first child 
+            </li>
+            <li>last child</li>
+        </ol>
+        <li>Lorem, ipsum.</li>
+        <li>last child</li>
+    </ul>
+
+    <ul class="ul_2">
+        <li>only child</li>
+    </ul>
+</body>
+

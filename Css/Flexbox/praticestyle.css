@@ -1,0 +1,30 @@
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.outer {
+    border: 2px solid red;
+    background-color: azure;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 400px;
+    display: flex;
+    margin-top: 100px;
+}
+.inner {
+    display: flex;
+    border: 2px solid blue;
+    background-color: lightcoral;
+    justify-content: center;
+    height: 200px;
+    width: 200px;
+    align-items: center;
+
+}
+.inner p {
+    color: red;
+}

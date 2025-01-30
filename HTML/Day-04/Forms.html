@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Forms
+        </title>
+    </head>
+    <body>
+        <h1>Login</h1>
+        <fieldset style="width: 400px;">
+            <legend>Personal Information</legend>
+
+        <form>
+            <label for="username">
+                Username: 
+            </label>
+            <input type="text" id="username" required 
+            placeholder="Enter username"
+            title="Enter the username">
+            <br><br>
+
+            <label for="email">
+                Email: 
+            </label>
+            <input type="email" id="email" required 
+            placeholder="Enter Email">
+            <br><br>
+
+            <label for="pass">
+                Password: 
+            </label>
+            <input type="password" id="pass" required 
+            placeholder="Password">
+            <br><br>
+
+            <label>Age:</label>
+            <input type="number" max="25" min="18">
+            <br><br>
+
+            <label>DOB:</label>
+            <input type="date">
+            <br><br>
+
+            <label>Insta Link:</label>
+            <input type="url">
+            <br><br>
+
+            <label>Upload Resume:</label>
+            <input type="file" accept=".pdf,.jpg">
+            <br><br>
+
+            <label>Skills:</label>
+            <input type="checkbox"> Java
+            <input type="checkbox"> Manual Testing
+            <input type="checkbox"> SQL
+            <input type="checkbox"> ReactJS
+            <br><br>
+
+            <label>Gender:</label>
+            <input type="radio" name="gender"> Male
+            <input type="radio" name="gender"> Female
+            <input type="radio" name="gender"> Other
+            <br><br>
+
+            <label>Select City:</label>
+            <select>
+                <option>Pune</option>
+                <option>Solapur</option>
+                <option>Mumbai</option>
+                <option>Hubli</option>
+            </select>
+            <br><br>
+
+            <label>Volume</label>
+            <input type="range" min="0" max="100" value="00">
+            <br><br>
+
+
+            <textarea>Write feedback.....</textarea>
+            <br><br>
+
+            <button>Submit</button>
+            <input type="reset">
+        </form>
+    </fieldset>
+
+    </body>
+</html>

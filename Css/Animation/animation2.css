@@ -1,0 +1,27 @@
+p {
+    border: 2px solid black;
+    height: 100px; width: 100px;
+    margin: 100px;
+
+    animation: change_multiclr 5s infinite;
+}
+
+@keyframes change_multiclr {
+    0% {
+        background-color: darkcyan;
+        border: 20px groove black;
+    }
+    25% {
+        background-color: aquamarine;
+    }
+    50% {
+        background-color: blueviolet;
+        border-radius: 50px;
+    }
+    75% {
+        background-color: bisque;
+    }
+    100% {
+        background-color: brown;
+    }
+}

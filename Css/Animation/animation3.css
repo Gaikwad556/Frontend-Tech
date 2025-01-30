@@ -1,0 +1,28 @@
+p {
+    border: 2px solid black;
+    height: 100px; width: 100px;
+    background-color: aqua;
+    border-radius: 50px;
+    margin: 100px;
+    animation: change_position 3s infinite;
+}
+
+@keyframes change_position {
+    0%{
+        transform: translate(0,0);
+    }
+    25% {
+        transform: translate(400px,0);
+    }
+    50% {
+        transform: translate(400px,400px);
+    }
+    75% {
+        transform: translate(0,400px);
+    }
+    100% {
+        transform: translate(0,0);
+    }
+
+
+}

@@ -1,0 +1,45 @@
+<script>
+    // function add() {
+    //     if (arguments.length == 0) {
+    //         console.log('Addition is 0');
+    //     }
+    //     else if (arguments.length == 1) {
+    //         console.log("Addition is ",arguments[0]);
+    //     }
+    //     else if (arguments.length == 2) {
+    //         console.log("Addition is ", arguments[0]+arguments[1]);
+    //     }
+    //     else {
+    //         console.log("Invalid number of Arguments")
+    //     }
+    // }
+
+    function add() {
+        let sum = 0;
+        for(let i = 0; i<arguments.length; i++) {
+            sum += arguments[i];
+        }
+        console.log(sum);
+    }
+
+    add();
+    add(10);
+    add(10,20);
+    add(10,20,30,40);
+
+    let sub = () => {
+        if (arguments.length == 2) {
+            console.log(arguments[0]-arguments[1]);
+        }
+        else {
+            console.log("Invalid arguments..!");
+        }
+    }
+
+    /*
+    Drawback
+    1.  arguments object won't support filter, map, reduce, foreach()
+    2.  arguments object won't support arrow function
+    */
+
+</script>

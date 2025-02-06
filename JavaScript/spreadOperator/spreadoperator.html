@@ -1,0 +1,15 @@
+<script>
+    add();
+    add(10,20);
+    add(10,20,40);
+
+    function add(...args) {
+        console.log(args.reduce((sum,ele)=>sum+ele,0))
+    }
+
+/*
+    1.  Spread operator can be used with all types of functions and 
+        supports all array methods(filter, map, reduce, forEach)
+*/
+</script>
+

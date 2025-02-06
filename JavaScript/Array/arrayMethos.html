@@ -1,0 +1,25 @@
+<script>
+    let arr = [10,20,30];
+    arr.push(40); //to add elements in end of array
+
+    arr.pop(); //remove last element from array
+
+    arr.unshift(5); //add element at 0th index in array
+
+    arr.shift() //remove element from 0th index in array
+
+    // splice(start, deleteCount, elements to be added)
+    arr1 = [1,2,3,4,5]
+    arr1.splice(0,3,200,400)
+
+    // slice(start,end)
+    arr2 = [1,2,3,4,5];
+    sub_arr2 = arr2.slice(1,4); 
+    console.log(sub_arr2); //[2,3,4]
+
+    //indexof()
+    console.log(arr2.indexOf(2));
+
+    // includes
+    console.log(arr2.includes(5));
+</script>

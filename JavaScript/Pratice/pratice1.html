@@ -1,0 +1,16 @@
+<script>
+    function checkType(value) {
+        if(Array.isArray(value) ){
+            return 'This is an array'
+        }
+        else if (typeof value == 'object' && value!=null) {
+            return 'object'
+        }
+        else {
+            return 'neither'
+        }
+    }
+
+    console.log(checkType([1,2,4,8,5]));
+
+</script>

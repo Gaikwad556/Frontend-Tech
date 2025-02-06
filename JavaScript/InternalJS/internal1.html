@@ -1,0 +1,33 @@
+<!-- var keyword: undefined -->
+<!-- in depth explain check learn of m-9 t-1 -->
+<script>
+    // var a;
+    // console.log(a);
+    // a = 10;
+    // console.log(a)
+
+    // console.log(a);
+    // console.log(b)
+    // var a = 10;
+    // var b
+    // console.log(a,b)
+
+    // TDZ
+    // console.log(a);
+    // console.log(b)
+    // let a = 10;
+    // let b
+    // console.log(a,b)
+
+    // function declaration are hoisted
+    add(10,20)
+    function add(a,b) {
+        console.log(a+b);
+    }
+
+    // Function Expression are not hoisted
+    sub(20,10)
+    let sub = function(a,b) {
+        console.log(a+b);
+    }
+</script>

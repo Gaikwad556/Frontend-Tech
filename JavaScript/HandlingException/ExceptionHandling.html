@@ -1,0 +1,31 @@
+<script>
+    function disp() {
+        console.log('Inside disp method');
+    };
+
+    function process() {
+        console.log('Processing Other Tasks');
+    };
+    try {
+        disp();
+    }
+    catch {
+        console.log("Exception Occurred and Handled")
+    }
+    finally {
+        console.log("Disp Excepting Ended.....!!")
+    }
+    process();
+</script>
+
+<!-- 
+try: In this we will keep our logic in which we might face some exceptions
+catch: This block will be executed when exception occurres in try block
+finally: This block will always be executed irrespective of execption occurres or not.
+
+
+Exception handling is required to avoid sudden termination in code
+because of sudden terminations other instructions will remains unexecuted.
+
+So, if we handle exception the further instructions will be executed
+-->

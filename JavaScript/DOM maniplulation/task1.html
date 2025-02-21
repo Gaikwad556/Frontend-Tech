@@ -1,0 +1,28 @@
+<style>
+    .sty {
+        color: blue;
+        font-family: cursive;
+    }
+</style>
+
+<h1 id="heading">Hello </h1>
+<button id="btn">Click</button>
+
+<script>
+    let head = document.getElementById('heading');
+    let button = document.getElementById('btn');
+    let toggle = true;
+    button.addEventListener('click',()=>{
+        // head.style.color = 'blue';
+        // head.style.fontFamily = 'cursive';
+        if (toggle == true) {
+            head.classList.add('sty');
+            toggle = false;
+        }
+        else {
+            head.classList.remove('sty');
+            toggle = true;
+        }
+       
+    })
+</script>

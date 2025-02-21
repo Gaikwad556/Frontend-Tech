@@ -1,0 +1,22 @@
+<script>
+    function greet(name) {
+        console.log(`Hello ${name}`);
+    }
+
+    function processGreet(callback) {
+        console.log(callback)
+        callback('Akash')
+    }
+
+    processGreet(greet);
+</script>
+
+<!-- 
+The functions which accepts another function as an argument
+such functions are called as Higher Order Function.
+
+
+The functions which are passed as an argument to another function
+such function are called as callback function
+arrow function are used as callback function
+-->

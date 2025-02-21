@@ -1,0 +1,28 @@
+<button id='btn'> Click</button>
+
+<script>
+    let button = document.getElementById('btn');
+    // button.addEventListener('mouseover',()=>{
+    //     alert('Button Clicked..!!')
+    // })
+
+    // button.addEventListener('dblclick',()=>{
+    //     alert('Button Clicked..!!')
+    // })
+
+    button.addEventListener('click',()=>{
+        alert('Button Clicked..!!');
+    })
+
+    // button.addEventListener('mouseout',()=>{
+    //     alert('Button Clicked..!!');
+    // })
+
+    // document.addEventListener('keydown',(event) => {
+    //     console.log(`Key pressed: ${event.key}`);
+    // })
+
+    document.addEventListener('keypress',(event) => {
+        console.log(`Key pressed: ${event.key}`);
+    })
+</script>

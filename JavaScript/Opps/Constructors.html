@@ -1,0 +1,65 @@
+<script>
+    // class Student {
+    //     constructor(name,id,paid_amt) {
+    //         this.s_name = name;
+    //         this.s_id = id;
+    //         this.s_amt = paid_amt;
+    //     }
+
+    //     javaCourses() {
+    //         console.log(this.s_name,"Enrolled for java");
+    //     }
+
+    //     pythoCourese() {
+    //         console.log(this.s_name,"Enrolled for Python");
+    //     }
+    //     getInfo() {
+    //         console.log("Student Name is: ",this.s_name);
+    //         console.log("Student Name is: ",this.s_id);
+    //         console.log("Student Name is: ",this.s_amt);
+    //     }
+    // }
+
+    // s1 = new Student('Akash', 101, 25000);
+    // s2 = new Student('SSg', 102, 15000);
+    // s3 = new Student('Ankit', 103, 12000);
+
+    // s1.javaCourses();
+    // s2.pythoCourese();
+
+    // s3.getInfo();
+
+
+    class Employee {
+        constructor(Emp_name, Emp_id, Emp_salary) {
+            this.name = Emp_name;
+            this.id = Emp_id;
+            this.salary = Emp_salary;
+        }
+        work(){
+            console.log("can Work");
+        }
+        code() {
+            console.log("can code");
+        }
+        getInfo() {
+            console.log("Employee name: "+this.name);
+            console.log("Employee id: "+this.id);
+            console.log("Employee salary: "+this.salary);
+        }
+    }
+
+    e1 = new Employee('Akash',101,25000);
+    e2 = new Employee('Pooja',102,55000);
+
+    e1.work();
+    e1.getInfo();
+
+    e2.code();
+    e2.getInfo();
+
+</script>
+<!-- 
+1.  constructor is used to initiallize instance variable
+2.  this will always hold the address of current object
+-->

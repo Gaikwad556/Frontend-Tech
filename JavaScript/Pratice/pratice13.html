@@ -1,0 +1,17 @@
+<ul id="list">
+    <li>Apple</li>
+    <li>Banana</li>
+    <li>Cherry</li>
+</ul>
+<p>Favorite Item: <span id="span"></span></p>
+
+<script>
+    let li = document.getElementById("list");
+    let text = document.getElementById("span");
+    li.addEventListener("click",(event)=>{
+        if (event.target.tagName === "LI") {
+            text.textContent = event.target.textContent;
+        }
+        
+    })
+</script>

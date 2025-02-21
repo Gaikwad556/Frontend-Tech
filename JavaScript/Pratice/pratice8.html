@@ -1,0 +1,31 @@
+<style>
+    div {
+        padding: 10px;
+    }
+</style>
+
+<div id="div">
+    <h1 id="h1">Welcome to Theme Switcher!</h1>
+    <button id="btn">Switch to Dark Theme</button>
+</div>
+
+<script>
+    let text = document.getElementById("h1");
+    let button = document.getElementById("btn");
+    let div = document.getElementById("div");
+    let value = true;
+    button.addEventListener('click', () => {
+        if (value == true) {
+            div.style.backgroundColor = "black";
+            text.style.color = "white";
+            button.textContent = "Switch to Light Theme";
+            value = false;
+        }
+        else {
+            div.style.backgroundColor = "white";
+            text.style.color = "black";
+            button.textContent = "Switch to Dark Theme";
+            value = true;
+        }
+    })
+</script>

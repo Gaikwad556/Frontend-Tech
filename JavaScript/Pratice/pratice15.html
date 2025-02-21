@@ -1,0 +1,50 @@
+<style>
+    input {
+        border: 2px solid grey;
+    }
+    .valid {
+        border-color: green;
+    }
+
+    .invalid {
+        border-color: red;
+    }
+</style>
+
+<form >
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="email">
+    <br><br>
+    <div id="div"></div>
+    <button id="btn">Submit</button>
+</form>
+
+<script>
+    let button = document.getElementById("btn");
+    button.addEventListener("click", () =>{
+        event.preventDefault();
+        let input = document.getElementById("email");
+        let div = document.getElementById("div");
+
+        let pattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/
+        div.textContent = "";
+        if(pattern.test(input.value)) {
+            input.classList.add("valid")
+            input.classList.remove("invalid");
+            div.textContent = "Valid email";
+            div.style.color = "green";
+        }
+        else {
+            input.classList.remove("valid")
+            input.classList.add("invalid");
+            div.textContent = "Invalid email";
+            div.style.color = "red";
+        }
+        
+    })
+
+</script>
+
+
+
+

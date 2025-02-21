@@ -1,0 +1,24 @@
+<script>
+    function outer() {
+        let count = 0;
+        return {
+            increment: function() {
+                console.log(++count);
+            },
+            decrement: function(){
+                console.log(--count);
+            },
+            reset: function() {
+                count = 0;
+                console.log(count);
+            }
+        }
+    }
+    
+    let counter = outer();
+    counter.increment();
+    counter.increment();
+    counter.increment();
+    counter.decrement();
+    counter.reset();
+</script>

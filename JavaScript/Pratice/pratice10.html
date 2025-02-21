@@ -1,0 +1,16 @@
+<input type="text" name="text" id="text" placeholder="Add an item">
+<button id="btn">Add Item</button>
+<ul id="ul"></ul>
+
+<script>
+    let text = document.getElementById("text");
+    let button = document.getElementById("btn");
+    let list = document.getElementById("ul");
+
+    button.addEventListener('click', () => {
+        let add = document.createElement("li");
+        add.textContent = text.value;
+        list.appendChild(add);
+        text.value = "";
+    })
+</script>

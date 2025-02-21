@@ -1,0 +1,25 @@
+<style>
+    p {
+        background-color: red;
+        width: 100px; height: 100px;
+    }
+</style>
+
+<p id="p"> </p> <br>
+<button id="btn"> Toggle Color</button>
+
+<script>
+    let text = document.getElementById("p");
+    let button = document.getElementById("btn");
+    let value = true;
+    button.addEventListener('click',() => {
+        if (value == true) {
+            text.style.backgroundColor = "red";
+            value = false;
+        }
+        else {
+            text.style.backgroundColor = "blue";
+            value = true;
+        }
+    })
+</script>

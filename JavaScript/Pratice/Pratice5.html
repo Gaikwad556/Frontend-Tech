@@ -1,0 +1,55 @@
+<style>
+    input {
+        border: 2px solid grey;
+        padding: 5px;
+        margin-bottom: 10px;
+    }
+    .error {
+        border-color: red;
+    }
+
+    .success {
+        border-color: green;
+    }
+
+    .feedback {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+</style>
+
+<form >
+    <label for="email">Email: </label>
+    <input type="email" name="email" id="emailinput">
+    <div id="feedbackinput"></div>
+    <br><br>
+    <button id="btn">Submit</button>
+</form>
+
+<script>
+    let button = document.getElementById("btn");
+
+    let emailPattern = /^[a-zA-Z0-9._-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+    button.addEventListener('click', function() {
+        let emailInput = document.getElementById("emailinput");
+        let emailValue = emailInput.value.trim();
+        let feedback = document.getElementById("feedbackinput");
+        event.preventDefault();
+        if (!emailPattern.test(emailValue)) {
+            emailInput.classList.add("error");
+            emailInput.classList.remove("success");
+            feedback.style.color = "red";
+            feedback.textContent = "Invalid Email!.";
+        } 
+        else if(emailPattern.test(emailValue)) {
+            emailInput.classList.remove("error");
+            emailInput.classList.add("success");
+            
+            feedback.style.color = "green";
+            feedback.textContent = "Valid Email!.";
+        }
+    })
+    
+
+
+</script>

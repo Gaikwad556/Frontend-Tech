@@ -1,0 +1,16 @@
+<p id="para"></p>
+<button id="btn">Click here to update DOM content</button>
+<script>
+    let button = document.getElementById('btn');
+    let value = true;
+    button.addEventListener('click',()=>{
+        let target = document.getElementById('para');
+        if (value == true) {
+            target.textContent = "Paragraph 1";
+            value = false;
+        }
+        else {
+            target.textContent = "Updated value"
+        }
+    })
+</script>

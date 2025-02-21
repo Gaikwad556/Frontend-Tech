@@ -1,0 +1,20 @@
+<script>
+    let p1 = new Promise(function(resolve, reject){
+        setTimeout(()=>{
+            console.log('Fetching the Data');
+            reject();
+            // resolve('Image');
+            
+        },3000)
+    })
+
+    p1.then((data)=>{
+        console.log('Display',data);
+
+    }).then(()=>{
+        console.log('Next step after displaying images');
+    })
+    .catch(()=>{
+        console.log("Promise Rejected, Failed to fetch data");
+    })
+</script>

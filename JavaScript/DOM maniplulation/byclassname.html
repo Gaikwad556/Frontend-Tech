@@ -1,0 +1,17 @@
+<p class="para">Para 1</p>
+<p class="para">Para 2</p>
+<p class="para">Para 3</p>
+
+<script>
+    let target = document.getElementsByClassName('para'); //we get HTMLCollection
+    console.log(target);
+    console.log(target.length);
+    let newele = document.createElement('p'); //it create <p> elements
+    newele.textContent = 'Para 4';
+    // newele.className = 'para';
+    newele.innerHTML = `<span>Hello</span>`
+    document.body.appendChild(newele);
+
+    console.log(target.length);
+    console.log(target);
+</script>

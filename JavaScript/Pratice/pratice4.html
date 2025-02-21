@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo App</title>
+</head>
+<body>
+    <h2>Todo List</h2>
+    <input type="text" id="task-input" placeholder="Enter task">
+    <button id="add-task-btn">Add Task</button>
+    
+    <ul id="task-list">
+        <!-- Tasks will be dynamically added here -->
+    </ul>
+</body>
+</html>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const taskInput = document.getElementById('task-input');
+        const addTaskBtn = document.getElementById('add-task-btn');
+        const taskList = document.getElementById('task-list');
+
+        addTaskBtn.addEventListener('click', function() {
+            const taskText = taskInput.value;
+            if (taskText !== "") {
+                const li = document.createElement('li');
+                li.innerHTML = `
+                <input type="checkbox" class="check-box">
+                <span class="text-task">${taskText}</span>
+                <button class="delete-btn">Delete</button>
+                `;       
+                taskList.appendChild(li);
+
+                const deletebtn = li.querySelector('.delete-btn');
+                const checkbox = li.querySelector('.check-box');
+
+                deletebtn.addEventListener('click', function() {
+                    li.remove();
+                })
+
+                checkbox.addEventListener('change',function() {
+                    li.classList.toggle('completed');
+                })
+
+                taskInput.value = "";
+              
+            }
+            
+        })
+    });
+
+</script>

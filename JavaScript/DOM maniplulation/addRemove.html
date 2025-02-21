@@ -1,0 +1,12 @@
+<ul></ul>
+<button id="btn"> Add</button>
+
+<script>
+    let target = document.querySelector('ul');
+    let button = document.getElementById('btn');
+    button.addEventListener('click',() =>{
+        let newele = document.createElement('li');
+        newele.textContent = 'Item';
+        target.appendChild(newele);
+    })
+</script>

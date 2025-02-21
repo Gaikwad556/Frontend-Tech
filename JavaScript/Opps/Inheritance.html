@@ -1,0 +1,31 @@
+<script>
+    class Employee {
+        constructor(name, id) {
+            this.name = name;
+            this.id = id;
+        }
+        work() {
+            console.log("Emp is working");
+        }
+    }
+
+    class Developer extends Employee {
+        work() {
+            console.log("Dev is Coding");
+        }
+
+    }
+
+    class Tester extends Employee {
+        testing() {
+            console.log("Testing S/W");
+        }
+    }
+
+    d1 = new Developer('Akash',101);
+    d1.work();
+    t1 = new Tester('Pooja', 102);
+    t1.work()
+    t1.testing();
+</script>
+

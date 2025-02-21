@@ -1,0 +1,18 @@
+<style>
+    div {
+        border: 1px solid black;
+        width: 200px;
+        height: 200px;
+    }
+</style>
+
+<div id="div"></div>
+<input type="color" name="color" id="color">
+
+<script>
+    let color = document.getElementById("color");
+    let div = document.getElementById("div");
+    color.addEventListener("input",()=>{
+        div.style.backgroundColor = color.value;
+    })
+</script>

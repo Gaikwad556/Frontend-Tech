@@ -1,0 +1,22 @@
+<script>
+    function fetchUserData() {
+        return new Promise((resolve,reject)=>{
+            setTimeout(()=>{
+                console.log('Fetching User Data');
+                resolve('User Data Fetched')
+            },3000)
+        })
+    }
+
+    async function processData() {
+        console.log('Data Processing Started...')
+        // fetchUserData(()=>{
+        //     console.log("Promise resolved")
+        // });
+        let userdata = await fetchUserData();
+        console.log(userdata);
+        console.log('Process Data Task Ended..');
+    }
+    processData();
+    console.log('Other Tasks')
+</script>

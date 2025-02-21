@@ -1,0 +1,17 @@
+<h1 id="h1">0</h1>
+<button id="inc">Increment</button>
+<button id="dec">Decrement</button>
+<button id="reset">Reset</button>
+
+<script>
+    let h1 = document.getElementById("h1");
+    let inc = document.getElementById("inc")
+    let dec = document.getElementById("dec");
+    let reset = document.getElementById("reset");
+    let count = 0;
+    inc.addEventListener('click',()=> {
+        
+        count++;
+        h1.textContent = count; 
+    })
+</script>

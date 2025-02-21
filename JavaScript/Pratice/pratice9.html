@@ -1,0 +1,20 @@
+<style>
+    #text {
+        width: 200px;
+        height: 100px;
+    }
+</style>
+
+
+
+<textarea name="text" id="text" placeholder="Type your messagge"></textarea>
+<p>Characters Counted: <span id="count">0</span></p>
+
+<script>
+    let text = document.getElementById("text");
+    let span = document.getElementById("count");
+
+    text.addEventListener("input",() => {
+        span.textContent = text.value.length;
+    })
+</script>
